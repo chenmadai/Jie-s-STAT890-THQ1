@@ -1,5 +1,5 @@
 ## Question1
-```{r}
+
 Fibonacci=function(n){
  Fibonacci=vector()
  Fibonacci[1]=1
@@ -10,19 +10,19 @@ Fibonacci=function(n){
 ## print the first 25 values of the sequence
 j=Fibonacci(25)
 j  
-```
+
 
 ## Question2
-```{r}
+
 ## Summary of "The Last Days of Reality"
 # Modern technology leads us to monetisation of propaganda, the use of machine learning, neuromarketing and the idea "Augmented Reality" and etc. The author, Mark Pesce, argued that these techniques potentially give tech giants such as Facebook the ability to research its 2 billion monthly active users, learn from the data they collected, target them at vulnerable moment, manipulate their thoughts and feelings for its own business profit. 
 # Examples or stories such as Macedonian teenager posting fake news to a willing audience of Donald Trump's supporters for money, Facebook's approach (similar to AlphaGo) of machine learning to decide on a user's newsfeed, Cambridge Analytica’s use of data analytics in influencing a voter’s judgement, Mark Zuckerberg’s demonstration on a future “augmented reality” and so on all indicate a world of post-reality. That is, instead of seeing the whole, people’s view of the world is strictly controlled by those powerful corporations and they are only given the partial look of the world that can be biased, misleading and unreal. The exploitation of influence will not just be a case for the industry, governments can also dig into each individual’s data such as messages and manipulate their behaviour and the reality. When these new technology become universal, we will embrace a world of “un-truth”. 
 # With the knowledge we have, there might be some opportunities to make a difference and to prevent it from happening. Some ideas we can consider is Solid, a project by Sir Tim Berners-Lee, the inventor of the web. Unlike Facebook who’s collecting the data of a user’s online behaviour, Solid enable you to expand your own profile. The key idea is that you own the data. You have the control and the sole control over it. 
 # Another interesting opinion from author is that while Facebook is having so much power in influencing its customers, Mark Zuckerberg’s next move can be the US president. He seems like he has this ambition and not to mention that he could have this power and money to achieve it.
-```
+
 
 ## Question3
-```{r}
+
 # a.
 dataset <- read.csv("/Users/madai/Rdoc/PersonenSchaden.csv",header = TRUE)
 
@@ -77,4 +77,4 @@ par(mfrow=c(1,1))
 library(ggplot2)
 dataset$legrep <- as.factor(dataset$legrep)
 ggplot(dataset,aes(x=dataset$op_time,y=log(dataset$total),color=dataset$legrep)) + geom_point(size=1)
-```
+
