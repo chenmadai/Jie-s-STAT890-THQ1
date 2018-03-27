@@ -12,15 +12,6 @@ j=Fibonacci(25)
 j  
 
 
-## Question2
-
-## Summary of "The Last Days of Reality"
-# Modern technology leads us to monetisation of propaganda, the use of machine learning, neuromarketing and the idea "Augmented Reality" and etc. The author, Mark Pesce, argued that these techniques potentially give tech giants such as Facebook the ability to research its 2 billion monthly active users, learn from the data they collected, target them at vulnerable moment, manipulate their thoughts and feelings for its own business profit. 
-# Examples or stories such as Macedonian teenager posting fake news to a willing audience of Donald Trump's supporters for money, Facebook's approach (similar to AlphaGo) of machine learning to decide on a user's newsfeed, Cambridge Analytica’s use of data analytics in influencing a voter’s judgement, Mark Zuckerberg’s demonstration on a future “augmented reality” and so on all indicate a world of post-reality. That is, instead of seeing the whole, people’s view of the world is strictly controlled by those powerful corporations and they are only given the partial look of the world that can be biased, misleading and unreal. The exploitation of influence will not just be a case for the industry, governments can also dig into each individual’s data such as messages and manipulate their behaviour and the reality. When these new technology become universal, we will embrace a world of “un-truth”. 
-# With the knowledge we have, there might be some opportunities to make a difference and to prevent it from happening. Some ideas we can consider is Solid, a project by Sir Tim Berners-Lee, the inventor of the web. Unlike Facebook who’s collecting the data of a user’s online behaviour, Solid enable you to expand your own profile. The key idea is that you own the data. You have the control and the sole control over it. 
-# Another interesting opinion from author is that while Facebook is having so much power in influencing its customers, Mark Zuckerberg’s next move can be the US president. He seems like he has this ambition and not to mention that he could have this power and money to achieve it.
-
-
 ## Question3
 
 # a.
@@ -40,8 +31,6 @@ total1 <- dataset$total[dataset$total <=35123]
 hist(total1,xlab = "Claim Settled Amount", main = "Histogram of claims less or equal to $35,123",col = "lightpink") 
 
 # d. 
-## assume settlement delay = finmonth - repmonth
-## and a new variable naming settledelay is created
 dataset$settledelay <- dataset$finmonth - dataset$repmonth
 hist(dataset$settledelay,xlab = "Settlement Delay", main = "Histogram of Settlement Delay",col = "salmon")
 
@@ -52,13 +41,8 @@ hist(dataset$legrep,freq = FALSE,xlab = "Legal Representation", ylab="Proportion
 hist(dataset$inj1,freq = FALSE,xlab = "Injury Code",ylab = "Proportion",main = "Histogram of Injury Code",col="dodgerblue")
 
 # g.
-### Comment: 
-# 1. Boxplot can be used for categorical data such as legal representation and injury code to provide and better visual check.
-# 2. claims amounts are very right skewed and a log transformation can be applied to ensure values of the claims are normally distributed.
-# 3. The proportion of cases which are legally presented almost double the amount of cases which are not legally presented.
-# 4. The frequency of settlement delay is decreasing. That is, the longer the time taken to settle a claim the lesser the cases. 
-# 5. Most cases have no injury or non-severe injuries. 
-
+### Comment: refer to submitted page
+ 
 # h.
 hist(log(dataset$total),xlab = "Log Dollar Value of the Claims",main = "Histogram of the Log Dollar Values of the Claims",col = "darkslategray1")
 
@@ -69,8 +53,7 @@ plot(dataset$op_time,dataset$total,col="royalblue",xlab = "Operational Time",yla
 plot(dataset$op_time,log(dataset$total),col="cornflowerblue",xlab = "Operational Time",ylab="Log Claim Size")
 
 # j. 
-## 1. Log dollar values of the claims is normally distributed after the transformation.
-## 2. There is no clear pattern between claim size and operational time. However there seems to be a positive trend of log claim size against operational time. 
+## refer to submitted answer please
 
 # k.
 par(mfrow=c(1,1))
